@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Threadz_stories & Threadz_vlogs — Collaboration Rate Card</title>
+  <style>
+    :root{
+      --accent:#ff5a5f;
+      --muted:#6b7280;
+      --card:#ffffff;
+      --bg:#f6f7fb;
+      --maxw:900px;
+      --radius:12px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    html,body{height:100%;margin:0;background:var(--bg);color:#111}
+    .wrap{max-width:var(--maxw);margin:40px auto;padding:28px}
+    .card{background:linear-gradient(180deg, #ffffff, #fbfbfd);border-radius:var(--radius);box-shadow:0 8px 30px rgba(16,24,40,0.06);padding:28px}
+    header{display:flex;gap:16px;align-items:center}
+    .logo{width:72px;height:72px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#7c4dff);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:18px}
+    h1{margin:0;font-size:20px}
+    p.lead{margin:6px 0 0;color:var(--muted);font-size:14px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:20px}
+    .section{background:var(--card);border-radius:10px;padding:14px}
+    .section h3{margin:0 0 8px;font-size:15px}
+    .meta{font-size:14px;color:var(--muted);line-height:1.5}
+    table{width:100%;border-collapse:collapse;margin-top:10px}
+    th,td{padding:10px 8px;text-align:left;border-bottom:1px solid #eee}
+    th{font-weight:600;font-size:13px;color:#222}
+    .rates th:nth-child(3),.rates td:nth-child(3){text-align:right}
+    .note{font-size:13px;color:var(--muted);margin-top:12px}
+    .contact{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:12px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
+    footer{margin-top:18px;font-size:13px;color:var(--muted)}
+
+    @media (max-width:720px){
+      .grid{grid-template-columns:1fr}
+      .logo{width:56px;height:56px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <header>
+        <div class="logo">TS</div>
+        <div>
+          <h1>Threadz_stories &amp; Threadz_vlogs</h1>
+          <p class="lead">Collaboration Rate Card</p>
+        </div>
+      </header>
+
+      <div class="grid">
+        <div class="section">
+          <h3>Instagram Profile</h3>
+          <div class="meta">
+            <div><strong>Handle:</strong> @Threadz_stories</div>
+            <div><strong>Followers:</strong> 15,000+</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>YouTube Channel</h3>
+          <div class="meta">
+            <div><strong>Channel:</strong> Threadz_vlogs</div>
+            <div><strong>URL:</strong> www.youtube.com/@Threads31</div>
+            <div><strong>Subscribers:</strong> 2.65K+</div>
+            <div><strong>Videos:</strong> 194</div>
+            <div><strong>Joined:</strong> Mar 17, 2017</div>
+            <div><strong>Total Views:</strong> 1,140,102+</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:20px" class="section">
+        <h3>Collaboration Rates</h3>
+        <table class="rates" aria-label="rates table">
+          <thead>
+            <tr>
+              <th style="width:30%">Platform</th>
+              <th style="width:50%">Type</th>
+              <th style="width:20%">Rate (INR)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Instagram</td><td>Story (1-2 frames)</td><td>1,500 – 3,000</td></tr>
+            <tr><td>Instagram</td><td>Post (Photo)</td><td>3,000 – 6,000</td></tr>
+            <tr><td>Instagram</td><td>Reels / Short Videos</td><td>5,000 – 12,000</td></tr>
+            <tr><td>YouTube</td><td>Shorts</td><td>2,000 – 5,000</td></tr>
+            <tr><td>YouTube</td><td>Full Video Integration</td><td>5,000 – 10,000</td></tr>
+            <tr><td>Combo</td><td>Package deals (Reel + Stories, etc.)</td><td>Available on request</td></tr>
+          </tbody>
+        </table>
+
+        <p class="note">Note: Rates are negotiable depending on the campaign and deliverables.</p>
+      </div>
+
+      <div class="section" style="margin-top:16px">
+        <h3>Contact</h3>
+        <div class="meta">
+          <div>For collaborations: DM on Instagram <strong>@Threadz_stories</strong></div>
+          <div>Email: <a href="mailto:harikrishnapb131@gmail.com">harikrishnapb131@gmail.com</a></div>
+        </div>
+
+        <div class="contact">
+          <a class="btn" href="mailto:harikrishnapb131@gmail.com">Email</a>
+          <a class="btn" href="https://www.youtube.com/@Threads31" target="_blank">YouTube</a>
+        </div>
+      </div>
+
+      <footer>
+        <small>Updated: {date}</small>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    // Insert today's date
+    const d = new Date();
+    const formatted = d.toLocaleDateString();
+    document.querySelector('footer small').textContent = 'Updated: ' + formatted;
+  </script>
+</body>
+</html>
+ 
